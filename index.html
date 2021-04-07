@@ -11,32 +11,40 @@
     <style>
       html body{
         background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,20,46,1) 0%, rgba(10,38,41,1) 28%, rgba(124,124,124,1) 61%, rgba(114,114,114,1) 70%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,20,46,1) 0%, rgba(10,38,41,1) 28%, rgba(124,124,124,1) 61%, 
+        rgba(114,114,114,1) 70%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
+      }
+      .dark-block{
+        background: black;
+        background-color: black;
+      }
     </style>
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container bg-dark text-white p-5">
+    <div class="container bg-dark text-white p-4">
       <div class="d-flex justify-content-center"> 
         <h1>Syed Mutahar Shah</h1>
       </div>
       <div class="row">
-        <div id="joke" class="text-center">
-          <blockquote class="blockquote">
-            <header class="header">
-              Programmer (noun).
-            </header>
-            A machine that turns coffee into code.
-          </blockquote>
+        <div class="d-flex justify-content-center p-3">
+          <div id="joke" class="dark-block rounded col-md-9 p-5">
+            <blockquote class="blockquote">
+              <header class="header">
+                Programmer (noun).
+              </header>
+              <p class="mt-4"> <small> <i>A machine that turns coffee into code.</i></small></p>
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container bg-dark text-white mt-5 p-5">
       <div id="projects">
-        <div class="row">
-          <h1>Personal Projects</h1>
+        <h1>Personal Projects</h1>
+        <div id="row-1" class="row">
           <div class="project1 col-md-6">
             <h3>Compiler For Dimished Java
             </h3>
@@ -71,6 +79,81 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,20,46,1) 0%, rgba(
             </small>
           </div>
         </div>
+        <div id="row-2" class="row mt-5">
+          <div class="project1 col-md-6">
+            <h3>Card Game
+            </h3>
+            <p>
+              Developed a card matching game supporting a user-friendly interface. 
+              The GUI development tools GTK3 and Glade were used to design the user interface.
+              Optimized code by implementing function-like macros that acted as event handlers 
+              for each individual button press; accomplished using the C preprocessor and macro expansions.
+            </p>
+            <small class="text-muted">
+              <a href="https://github.com/MutaharS/GTK3Card_Game/tree/main/card_matching_game">
+                https://github.com/MutaharS/GTK3Card_Game/tree/main/card_matching_game
+              </a>
+            </small>
+          </div>
+          <div class="project2 col-md-6">
+            <h3>A* Search Algorithm</h3>
+            <p>
+              Implementation of the A* search algorithm, an intelligent graph traversal algorithm for finding the shortest path
+              from an initial node to a goal node. The algorithm uses a heuristic to guide its decisions on which paths to explore; 
+              the heuristic used here is the straight-line distance from a node to the goal node. 
+              <br>
+              <br>
+            </p>
+            <small class="text-muted">
+              <a href="https://github.com/MutaharS/AStarAlgo">
+                https://github.com/MutaharS/AStarAlgo
+              </a>
+            </small>
+          </div>
+        </div>
+        <div id="row-3" class="row mt-5">
+          <div class="project1 col-md-6">
+            <h3>Best Buy Scraper
+            </h3>
+            <p>
+              The release date of the NVIDIA RTX 3060 TI graphics card was not specified, however, I wanted to get my hands on
+              the GPU as soon as it released so that I could grab myself a card while it was still in stock. So, I wrote a 
+              python script that alerted me with a text message via AWS SNS when the item would be in stock.
+              Unfortunately, the card sold out in a matter of seconds after receiving the notification that it was in stock . . . 
+              it seems that to beat the scalpers, you must become the<a href="https://www.investopedia.com/terms/s/scalpers.asp"> scalper</a>.
+            </p>
+            <small class="text-muted">
+              <a href="https://github.com/MutaharS/BestBuyScraper/blob/main/scraper.py">
+                https://github.com/MutaharS/BestBuyScraper/blob/main/scraper.py
+              </a>
+            </small>
+          </div>
+          <div class="project2 col-md-6">
+            <h3>USF Seat Availability</h3>
+            <p>
+              The wonderful app Coursicle allows you to track seat availability for Fall and Spring semester courses at most universities.
+              However, they do not yet support summer course tracking. So, I wrote a python script to do just that. Unlike the Best Buy Scraper,
+              this script sends me an email when a class' seat opens up. I used BeautifulSoup to parse the html content and SSL to
+              start an SMTP connection.
+              <br>
+              <br>
+              <br>
+            </p>
+            <small class="text-muted">
+              <a href="https://github.com/MutaharS/USFCourseSeatAlert">
+                https://github.com/MutaharS/USFCourseSeatAlert
+              </a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="container bg-dark text-white mt-5 p-5">
+        <blockquote class="blockquote">
+          <p class="mb-4">
+            “The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”
+          </p>
+          <footer class="blockquote-footer"><cite title="Tim Berners-Lee">Tim Berners-Lee</cite>, Inventor of the World Wide Web</footer>
+        </blockquote>
       </div>
     </div>
 
