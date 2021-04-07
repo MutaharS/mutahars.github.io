@@ -1,0 +1,5 @@
+.bootstrap-overrides html body{
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,10,41,1) 14%, rgba(35,20,46,1) 31%, rgba(13,49,61,1) 44%,
+                rgba(42,24,48,1) 69%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 94%) !important;
+    background-color: black;
+}
