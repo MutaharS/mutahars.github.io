@@ -15,32 +15,36 @@
     <style>
       
       html body{
-        background: rgb(68, 60, 60);
-        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(69,69,69,1) 58%, rgba(0,0,0,1) 100%);
+        background: rgb(84,157,207);
+        background: radial-gradient(circle, rgba(84,157,207,1) 0%, rgba(59,89,153,1) 46%);
       }
       .dark-block{
         background: black;
         background-color: black;
       }
       .banner-block{
-        background: rgb(85,85,85);
-background: radial-gradient(circle, rgba(85,85,85,1) 0%, rgba(149,173,184,1) 100%);
+        background: rgb(84,157,207);
+        background: radial-gradient(circle, rgba(84,157,207,1) 0%, rgba(59,89,153,1) 46%);
         width: 100%;
         height: 20em;
       }
       .reg-back{
-        background: rgb(0,0,0);
-        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(69,69,69,1) 58%, rgba(0,0,0,1) 100%);
+        background: rgb(84,157,207);
+        background: radial-gradient(circle, rgba(84,157,207,1) 0%, rgba(59,89,153,1) 46%);
       }
       .video-wrapper{
         padding-bottom: 10%;
+      }
+      .light-back{
+        background: rgb(84,157,207);
+        background: radial-gradient(circle, rgba(84,157,207,1) 0%, rgba(84,157,207,1) 100%);
       }
     </style>
 
     <title>Shah, Syed Mutahar</title>
   </head>
   <body>
-    <div class="container reg-back text-white p-5">
+    <div class="container text-white p-5">
       <div class="d-flex justify-content-center banner-block p-5">
         <div class="d-flex justify-content-center p-5 mt-3">
           <h1 class="display-1">Syed Mutahar Shah</h1>
@@ -134,7 +138,7 @@ background: radial-gradient(circle, rgba(85,85,85,1) 0%, rgba(149,173,184,1) 100
               the GPU as soon as it released so that I could grab myself a card while it was still in stock. So, I wrote a 
               python script that alerted me with a text message via AWS SNS when the item would be in stock.
               Unfortunately, the card sold out in a matter of seconds after receiving the notification that it was in stock . . . 
-              it seems that to beat the scalpers, you must become the <a href="https://www.investopedia.com/terms/s/scalpers.asp">scalper</a>.
+              it seems that to beat the scalpers, you must become the<a href="https://www.investopedia.com/terms/s/scalpers.asp"> scalper</a>.
             </p>
             <small class="text-muted">
               <a href="https://github.com/MutaharS/BestBuyScraper/blob/main/scraper.py">
@@ -158,12 +162,12 @@ background: radial-gradient(circle, rgba(85,85,85,1) 0%, rgba(149,173,184,1) 100
           </div>
         </div>
       </div>
-      <div class="container dark-block text-white mt-5 p-5 d-flex justify-content-left">
+      <div class="container light-back text-white mt-5 p-5 d-flex justify-content-left">
         <blockquote class="blockquote">
           <p class="mb-4">
             “The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”
           </p>
-          <footer class="blockquote-footer"><cite title="Tim Berners-Lee">Tim Berners-Lee</cite>, Inventor of the World Wide Web</footer>
+          <footer class="blockquote-footer text-white"><cite title="Tim Berners-Lee">Tim Berners-Lee</cite>, Inventor of the World Wide Web</footer>
         </blockquote>
       </div>
     </div>
@@ -173,35 +177,31 @@ background: radial-gradient(circle, rgba(85,85,85,1) 0%, rgba(149,173,184,1) 100
       <div id="project-demos">
         <h2>A* Search Algorithm Visualization</h2>
         <div id="row-1" class="row">
-          <div class="project1 col-md-6 mt-1">
-            <div class="video-wrapper embed-responsive embed-responsive-16by9" allowfullscreen>
-                <video width="800" autoplay muted loop>
+            <div class="embed-responsive embed-responsive-16by9 video-wrapper"> 
+                <video width="800" muted autoplay loop>
                     <source src="videos/ASTAR_DEMO.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
-            </div>
-          </div>
+            </div> 
         </div>
         <h2>Webgame Gameplay</h2>
         <div id="row-2" class="row">
           <div class="project2 col-md-6 mt-1">
-            <div class="video-wrapper embed-responsive embed-responsive-16by9" allowfullscreen>
-                <video width="800" autoplay muted loop>
+            <div class="embed-responsive embed-responsive-16by9 video-wrapper"> 
+                <video width="800" muted autoplay loop>
                     <source src="videos/PLIP_PLOP_DEMO.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
+            </div> 
             </div>
           </div>
         </div>
         <h2>UR5 Motion Planning - Object Grasp</h2>
         <div id="row-2" class="row">
           <div class="project2 col-md-6 mt-1">
-            <div class="video-wrapper embed-responsive embed-responsive-16by9" allowfullscreen>
-                <video width="800" autoplay muted loop>
+            <div class="embed-responsive embed-responsive-16by9 video-wrapper"> 
+                <video width="800" muted autoplay loop>
                     <source src="videos/UR5.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
