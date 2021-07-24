@@ -81,10 +81,47 @@
     <div class="container reg-back text-white mt-5 p-5">
       <div id="projects">
         <h1>Personal Projects</h1>
+        <div id="row-0" class="row">
+            <div class="project1 col-md-6 mt-1">
+              <h3>Conference Paper Management System</h3>
+              <p>
+                Performed requirements and design analyses to develop a web-based software system with Python and Django for 
+                paper submission and grading of papers through a user friendly UI. Generated entity-relationship models and 
+                optimized database architecture through normalization (3NF) to uphold standard backend design practices.
+                Implemented secure access using user authentication to protect sensitive data and established user 
+                hierarchies to enforce proper access control. Database accesses performed via the Django Object-Relational
+                Mapper (ORM).
+              </p>
+              <small class="container border border-info rounded text-muted">
+                <a href="https://github.com/MutaharS/CPMS">
+                  Link to Project
+                </a>
+              </small>
+            </div>
+            <div class="project2 col-md-6 mt-1">
+              <h3>Library Management System</h3>
+              <p>
+                Designed and developed a terminal-based library management system using Python and PostgreSQL. 
+                Patrons have the option to search for books by subject or an author's lastname. Librarians have authorization 
+                to check out books to users and process returns, as well as multiple reports available 
+                (book catalog, user report, overdue books report). 
+                <br> 
+                Database accesses performed via raw SQL queries. Passwords hashed prior to being stored into
+                the database to prevent security hazards. Further security measures include:
+                input sanitization to prevent SQL injection, the creation of PostgreSQL users with the 
+                corresponding priviliges of patron or librarion, and database views to limit data accessible to 
+                non-admin users.
+              </p>
+              <small class="container border border-info rounded text-muted">
+                <a href="https://github.com/MutaharS/LibrarySystem">
+                  Link to Project
+                </a>
+              </small>
+            </div>
+        </div>
         <div id="row-1" class="row">
-          <div class="project1 col-md-6 mt-1">
-            <h3>Compiler For Diminished Java
-            </h3>
+          <div class="project3 col-md-6 mt-1">
+            <h3>Compiler For Diminished Java</h3>
             <p>
               Developed a compiler for the Diminished Java (DJ) programming language, using Flex to generate
               a lexical analyzer and GNU Bison to generate a parser. Wrote the regular expressions and tokens
@@ -99,7 +136,7 @@
               </a>
             </small>
           </div>
-          <div class="project2 col-md-6 mt-1">
+          <div class="project4 col-md-6 mt-1">
             <h3>Unity Webgame</h3>
             <p>
               Designed and developed a web game that was inspired by a game I used to play as a child. Created graphical assets 
@@ -114,9 +151,8 @@
           </div>
         </div>
         <div id="row-2" class="row mt-5">
-          <div class="project3 col-md-6 mt-1">
-            <h3>Card Game
-            </h3>
+          <div class="project5 col-md-6 mt-1">
+            <h3>Card Game</h3>
             <p>
               Developed a card matching game supporting a user-friendly interface. 
               The GUI development tools GTK3 and Glade were used to design the user interface.
@@ -129,7 +165,7 @@
               </a>
             </small>
           </div>
-          <div class="project4 col-md-6 mt-1">
+          <div class="project6 col-md-6 mt-1">
             <h3>A* Search Algorithm</h3>
             <p>
               Implementation of the A* search algorithm, an intelligent graph traversal algorithm for finding the shortest path
@@ -144,9 +180,8 @@
           </div>
         </div>
         <div id="row-3" class="row mt-5">
-          <div class="project5 col-md-6 mt-1">
-            <h3>Best Buy Scraper
-            </h3>
+          <div class="project7 col-md-6 mt-1">
+            <h3>Best Buy Scraper</h3>
             <p>
               The release date of the NVIDIA RTX 3060 TI graphics card was not specified, however, I wanted to get my hands on
               the GPU as soon as it released so that I could grab myself a card while it was still in stock. So, I wrote a 
@@ -160,7 +195,7 @@
               </a>
             </small>
           </div>
-          <div class="project6 col-md-6 mt-1">
+          <div class="project8 col-md-6 mt-1">
             <h3>USF Seat Availability</h3>
             <p>
               The wonderful app Coursicle allows you to track seat availability for Fall and Spring semester courses at most universities.
