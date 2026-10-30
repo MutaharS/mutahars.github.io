@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected engineering work by Syed Shah across cloud data platforms, financial reporting, and privacy-aware health data processing.">
+  <meta name="theme-color" content="#f5f7f4"><title>Selected Work | Syed Shah</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Syed Shah home"><span class="brand-mark">SS</span><span class="brand-name">Syed Shah</span></a><div class="nav-links"><a href="index.html#work" aria-current="page">Work</a><a href="algorithms.html">Algorithms</a><a class="optional-link" href="index.html#experience">Experience</a><a class="nav-cta" href="https://www.linkedin.com/in/syed-mutahar-shah/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></nav></header>
+<main id="main">
+  <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Selected work</span></div><p class="eyebrow">Professional systems</p><h1>Architecture that improves the work around it.</h1><p class="lead">These case studies show how I approached reliability, data integrity, cost, and the needs of the teams using each system. They describe employer work at a high level.</p></div></section>
+  <section id="platform" class="section-tight"><div class="container article">
+    <p class="eyebrow">01 / Capital One / Platform engineering</p><h2>Modernizing event-driven data workflows</h2>
+    <p class="lead">Legacy ETL was costly to run and expensive to support. I re-engineered the workflows into a hybrid AWS and declarative Spark architecture, then added automation and telemetry so the platform could be operated with clearer signals.</p>
+    <div class="number-grid"><div class="number-card"><strong>~$360K</strong><span>Estimated annual cost reduction</span></div><div class="number-card"><strong>&gt;50%</strong><span>Less routine maintenance effort</span></div><div class="number-card"><strong>Days → minutes</strong><span>Incident response time</span></div></div>
+    <figure class="article-visual"><div class="pipeline"><div class="pipeline-node"><small>Inputs</small><strong>Event and source data</strong></div><div class="pipeline-node"><small>Cloud</small><strong>Firehose · Lambda · S3 · Glue</strong></div><div class="pipeline-node"><small>Processing</small><strong>Declarative Spark</strong></div><div class="pipeline-node"><small>Operations</small><strong>New Relic telemetry</strong></div></div><figcaption>Conceptual view of the components and operational layer.</figcaption></figure>
+    <h3>What changed</h3><p>The architecture moved legacy ETL into an event-driven flow built around Kinesis Firehose, AWS Lambda, S3, Glue, and an in-house declarative Spark framework. Self-healing automation handled routine failure modes. New Relic instrumentation reported pipeline duration and custom error codes, with an alert when error rates exceeded 5% within a rolling 10-minute window.</p>
+    <h3>Why it mattered</h3><p>The changes drove an estimated $360K in annual cost reductions, cut routine maintenance effort by more than half, and brought incident response from days to minutes. The telemetry gave engineers useful operational visibility without requiring them to trace every orchestration layer manually.</p>
+  </div></section>
+  <section id="lender-reporting" class="section-tight" style="background:var(--surface-soft)"><div class="container article">
+    <p class="eyebrow">02 / Capital One / Data products</p><h2>One trusted lender report from four source formats</h2>
+    <p class="lead">Auto-lending partners sent funding reports in different formats. The process team needed a consistent, auditable view of funded loans, but monthly reconciliation required a full day of manual work.</p>
+    <figure class="article-visual"><div class="pipeline"><div class="pipeline-node"><small>Detect</small><strong>Recognize files on arrival</strong></div><div class="pipeline-node"><small>Preserve</small><strong>Land raw source data</strong></div><div class="pipeline-node"><small>Normalize</small><strong>Route four formats</strong></div><div class="pipeline-node"><small>Deliver</small><strong>Unified lender report</strong></div></div><figcaption>Shared ingestion pattern with a processing path for each partner format.</figcaption></figure>
+    <h3>My approach</h3><p>I designed a serverless ingestion framework that recognized each incoming file, preserved the raw data, routed each report format through its own transformation path, and produced a unified lender report. The design made the output consistent while retaining the source data needed for auditability and troubleshooting.</p>
+    <h3>Outcome</h3><p>The pipeline replaced a full-day monthly manual cycle and supported accurate, timely collection of more than $200K in monthly revenue. In related platform work, I established ODCS-based data contracts with source-level checks for schema, valid ranges, and nullability to protect downstream data quality.</p>
+  </div></section>
+  <section id="health-data" class="section-tight"><div class="container article">
+    <p class="eyebrow">03 / Abbott Labs / Health data</p><h2>Faster, lower-cost processing for privacy-sensitive data</h2>
+    <p class="lead">Multi-terabyte PII and non-PII datasets required reliable transformation and de-identification. I led a migration from AWS jobs to multi-hop Databricks Delta Live Tables workflows.</p>
+    <div class="number-grid"><div class="number-card"><strong>80%</strong><span>Runtime reduction</span></div><div class="number-card"><strong>77%</strong><span>Job cost reduction</span></div><div class="number-card"><strong>Terabytes</strong><span>PII and non-PII processed</span></div></div>
+    <h3>Design and delivery</h3><p>The workflow ingested, transformed, and de-identified data across multiple stages. I worked with business users to turn clinical and operational requirements into tested data models, and created synthetic datasets that reproduced production patterns for load and schema-drift testing.</p>
+    <h3>Operational quality</h3><p>I built job-health and data-anomaly reporting to make pipeline behavior easier to inspect. Separate performance work on a critical Python JSON batch job reduced runtime by nearly 99% through caching and memory-efficient processing.</p>
+  </div></section>
+  <section id="dealer-crm" class="section-tight" style="background:var(--surface-soft)"><div class="container article">
+    <p class="eyebrow">04 / Capital One / Application services</p><h2>High-throughput endpoints for dealer credit applications</h2>
+    <p class="lead">I developed new hard-credit application endpoints for the Dealer CRM using Java and Spring Boot. The work reduced CRM drop-off and contributed to a loan-funding funnel worth more than $10B.</p>
+    <p>The endpoints addressed friction in a product-facing workflow. This work sits alongside my data platform experience and reflects my interest in software that improves both the customer journey and the systems behind it.</p>
+  </div></section>
+  <section class="section-tight"><div class="container callout"><p class="eyebrow">More independent work</p><h2>Search systems from first principles.</h2><p class="lead">Explore a crawler, Spark-based index, and ranked query prototype, along with the technical lessons I would carry into a production search system.</p><div class="actions" style="margin-top:24px"><a class="button button-primary" href="search-engine.html">Read the SearchEngine case study →</a></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><p class="eyebrow eyebrow-light">Connect</p><h2>Interested in building reliable systems together?</h2><div class="footer-links"><a href="https://www.linkedin.com/in/syed-mutahar-shah/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/MutaharS" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://leetcode.com/u/muta14/" target="_blank" rel="noopener noreferrer">LeetCode ↗</a></div><div class="footer-bottom"><span>© 2026 Syed Shah</span><span>Built with care. Hosted on GitHub Pages.</span></div></div></footer>
+</body></html>
