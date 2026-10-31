@@ -9,6 +9,7 @@ A static portfolio for Syed Shah, hosted from this GitHub Pages repository. It u
 - `search-engine.html` — independent SearchEngine project write-up
 - `algorithms.html` — dated LeetCode statistics snapshot and problem-solving focus
 - `leetcode-activity.svg` — activity grid reconstructed from the supplied screenshot
+- `images/leetcode-2021-activity.png` — profile evidence for 2021 submissions, active days, and longest streak
 - `style.css` — shared design system and responsive layouts
 
 ## Content maintenance
